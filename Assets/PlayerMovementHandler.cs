@@ -1,89 +1,41 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class PlayerMovementHandler : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
-
-    private Rigidbody2D rb;
-    private CapsuleCollider2D cc;
-
-    private float passedTimeSincePress;
-    private float delayPress = .25f;
-    private float TimeOnPress;
     private float movementTime = 0.2f;
-
-    private bool firstPress = false;
-    private bool keyPressed = false;
-    private bool moving = false;
-
-    private Vector2 colliderSize;
 
     private Vector3 startingPosition;
     private Vector3 destinationPosition;
 
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        cc = GetComponent<CapsuleCollider2D>();
+    private Coroutine coroutine;
 
-        colliderSize = cc.size;
+    public bool isMoving = false;
+
+    public UnityEvent stopMoving;
+
+    public void StartMovement ()
+    {
+        isMoving = true;
     }
 
-    // Update is called once per frame
-    private void Update()
+    public void StoppMovement()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !keyPressed)
-        {
-            if (firstPress)
-            {
-                bool isDoublePressed = Time.time - passedTimeSincePress <= delayPress;
-                Debug.Log(isDoublePressed);
-                if (isDoublePressed)
-                {
-                    Debug.Log("Double Pressed");
-                    firstPress = false;
-                }
-            }
-            else
-            {
-                TimeOnPress = Time.time;
-                keyPressed = true;
-                firstPress = true;
-            }
-            passedTimeSincePress = Time.time;
-        }
+        isMoving = false;
+    }
 
-        else if (keyPressed)
+    public void Update()
+    {
+        if (isMoving && coroutine == null)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                keyPressed = false;
-            }
-            else if (Time.time - TimeOnPress >= delayPress && !moving)
-            {
-                StartCoroutine(HandleMovement());
-            }
-        }
-
-        if (Time.time - passedTimeSincePress > delayPress && firstPress)
-        {
-            if (!keyPressed)
-            {
-                
-            }
-            firstPress = false;
+            coroutine = StartCoroutine(HandleMovement());
         }
     }
 
-    private IEnumerator HandleMovement()
+    public IEnumerator HandleMovement()
     {
-        moving = true;
-
         float elapsedTime = 0;
 
         startingPosition = transform.position;
@@ -98,6 +50,7 @@ public class PlayerMovementHandler : MonoBehaviour
 
         transform.position = destinationPosition;
 
-        moving = false;
+        stopMoving.Invoke();
+        coroutine = null;
     }
 }

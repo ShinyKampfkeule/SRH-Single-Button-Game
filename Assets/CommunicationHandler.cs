@@ -5,10 +5,7 @@ using UnityEngine.Events;
 
 public class CommunicationHandler : MonoBehaviour
 {
-    private bool communicating = false;
-
-    private float delayPress = .25f;
-    private float passedTimeSincePress;
+    private bool isCommunicating = false;
 
     public UnityEvent communicationEvent;
     public UnityEvent exitCommunicationEvent;
@@ -16,27 +13,36 @@ public class CommunicationHandler : MonoBehaviour
     [SerializeField]
     public int communicationIndex = -1;
 
-    // Update is called once per frame
-    void FixedUpdate()
+    [SerializeField]
+    private GameObject player;
+
+    public void StartCommunication()
     {
-        if (communicating && Input.GetKeyDown(KeyCode.Space) && Time.time - passedTimeSincePress < delayPress)
+        if (player.GetComponent<TriggerHandler>().collided.name == transform.name)
         {
-            communicationEvent.Invoke();
-            communicationIndex++;
+            isCommunicating = true;
+            SaySomething();
         }
     }
 
     public void SaySomething()
     {
-        communicationIndex++;
-        communicating = true;
-        communicationEvent.Invoke();
+        if (isCommunicating)
+        {
+            communicationIndex++;
+            communicationEvent.Invoke();
+        }
     }
 
     public void LeaveCommunication()
     {
-        communicating = false;
         exitCommunicationEvent.Invoke();
         communicationIndex = -1;
+        isCommunicating = false;
+    }
+
+    public void DoubleTapped()
+    {
+        Debug.Log("Double Tapped");
     }
 }
