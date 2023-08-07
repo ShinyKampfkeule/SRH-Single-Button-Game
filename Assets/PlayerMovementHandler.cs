@@ -14,15 +14,14 @@ public class PlayerMovementHandler : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
 
+    [SerializeField]
+    private Animator animator;
+
+    public AudioSource runningSounds;
+
     private Rigidbody2D rb;
 
-    private Vector3 startingPosition;
-    private Vector3 destinationPosition;
-
-    private Coroutine coroutine;
-
     public bool isMoving = false;
-    private bool isOnSlope = false;
 
     public UnityEvent stopMoving;
 
@@ -43,48 +42,25 @@ public class PlayerMovementHandler : MonoBehaviour
 
     public void Update()
     {
-        if (isMoving && coroutine == null)
+        if (isMoving)
         {
-            rb.velocity = new Vector2(speed, rb.velocity.y);
-            //coroutine = StartCoroutine(HandleMovement());
-        }
-    }
-
-    public IEnumerator HandleMovement()
-    {
-        float elapsedTime = 0;
-
-        startingPosition = transform.position;
-        destinationPosition = startingPosition + GetMovementDirection();
-
-        while (elapsedTime < movementTime)
-        {
-            transform.position = Vector3.Lerp(startingPosition, destinationPosition, (elapsedTime / movementTime));
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.position = destinationPosition;
-
-        stopMoving.Invoke();
-        coroutine = null;
-    }
-
-    private Vector3 GetMovementDirection()
-    {
-        Vector3 direction = Vector3.right;
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer);
-
-        if (hit.collider != null)
-        {
-            Vector3 slopeNormal = hit.normal;
-            if (Mathf.Abs(slopeNormal.x) > 0.01f)
+            if (!runningSounds.isPlaying)
             {
-                direction.y = Mathf.Abs(slopeNormal.x) * Mathf.Sign(slopeNormal.y);
+                runningSounds.Play();
+            }
+            if (animator.GetFloat("Speed") == 0)
+            {
+                animator.SetFloat("Speed", speed);
+            }
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+        }
+        else
+        {
+            if (animator.GetFloat("Speed") != 0)
+            {
+                animator.SetFloat("Speed", 0);
+                runningSounds.Stop();
             }
         }
-
-        return direction;
     }
 }

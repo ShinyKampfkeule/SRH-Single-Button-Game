@@ -9,10 +9,10 @@ public class MoveBackground : MonoBehaviour
 
     public void MoveImage()
     {
-        Debug.Log(player.GetComponent<TriggerHandler>().collided);
-        if (player.GetComponent<TriggerHandler>().collided.name == transform.name)
+        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        if (collider != null && collider.name == transform.name)
         {
-            transform.localPosition = new Vector3(transform.localPosition.x * 3, transform.localPosition.y, transform.localPosition.z);
+            transform.position = new Vector3(transform.position.x * 3, transform.position.y, transform.position.z);
         }
     }
 }

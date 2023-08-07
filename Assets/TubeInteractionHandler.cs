@@ -5,28 +5,17 @@ using UnityEngine;
 public class TubeInteractionHandler : MonoBehaviour
 {
     [SerializeField]
-    public int ExitCoordX = 0;
+    public GameObject ExitTube = null;
 
     [SerializeField]
     private GameObject player;
 
-    private bool playerIsHere = false;
-
-    public void PlayerEntered()
-    {
-        playerIsHere = true;
-    }
-
-    public void PlayerLeft()
-    {
-        playerIsHere = false;
-    }
-
     public void PlayerInteraction()
     {
-        if (playerIsHere && player.GetComponent<TriggerHandler>().collided.name == transform.name)
+        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        if (collider != null && collider.name == transform.name)
         {
-            player.transform.localPosition = new Vector3(ExitCoordX, player.transform.localPosition.y, player.transform.localPosition.z);
+            player.transform.position = ExitTube.transform.position;
         }
     }
 }

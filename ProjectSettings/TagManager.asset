@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - Icons
-  - 
-  - 
+  - Camera 1
+  - Camera 2
   - 
   - 
   - 
@@ -67,4 +67,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1536993407
+    locked: 0
+  - name: Canvas
+    uniqueID: 1473694793
     locked: 0

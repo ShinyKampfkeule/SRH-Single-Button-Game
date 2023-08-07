@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class InputHandler : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject player = null;
+
     private bool keyPressed = false;
     private bool firstPress = false;
     private bool playerIsMoving = false;

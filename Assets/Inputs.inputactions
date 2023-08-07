@@ -6,17 +6,17 @@
             "id": "908c06e6-cd44-484c-b56f-bdce11542c79",
             "actions": [
                 {
-                    "name": "DoubleTap",
+                    "name": "Hold",
                     "type": "Button",
-                    "id": "a5ffb593-6ed8-486b-a72e-f51edc164501",
+                    "id": "124c35b5-50a4-451d-a618-ff0ebd054099",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Hold",
+                    "name": "DoubleTap",
                     "type": "Button",
-                    "id": "124c35b5-50a4-451d-a618-ff0ebd054099",
+                    "id": "a5ffb593-6ed8-486b-a72e-f51edc164501",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
