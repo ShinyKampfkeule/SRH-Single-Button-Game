@@ -1203,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -1307,6 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1699599193}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -1665,6 +1667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -2103,6 +2106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 16579299}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -2238,6 +2242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 130311387}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -2429,6 +2434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1959892362}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -2547,6 +2553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 670312659}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -2841,6 +2848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1894389187}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -3221,6 +3229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 171099138}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -3387,7 +3396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 150265f7c63d6ea4bb56d40e33367911, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 0.75
   Loop: 0
   Mute: 0
@@ -4073,6 +4082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1563700311}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -4523,6 +4533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 981908688}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -7456,6 +7467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1931312168}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -7627,6 +7639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1682276026}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -7782,6 +7795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1986864331}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -8045,6 +8059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 89672546}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -8360,6 +8375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 987019388}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -8597,6 +8613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -8977,6 +8994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -9055,6 +9073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 926110416}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -9133,6 +9152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 346049234}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -9547,7 +9567,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 928ff42250a38504e90678131926f8c5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 3
   Loop: 1
   Mute: 0
@@ -9922,6 +9942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1250280504}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -9974,6 +9995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1821102284}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11008,6 +11030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11144,6 +11167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1912720906}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11449,6 +11473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11576,6 +11601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 131953343}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11716,6 +11742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 82777157}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11794,6 +11821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 272548871}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -11898,6 +11926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 73527162}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -13311,6 +13340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1840319140}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -13520,7 +13550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676507936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.71, y: -2.43, z: 29.252329}
+  m_LocalPosition: {x: -38.79, y: -2.59, z: 29.252329}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1859510614}
@@ -14335,6 +14365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -14380,6 +14411,7 @@ GameObject:
   - component: {fileID: 743435071}
   - component: {fileID: 743435073}
   - component: {fileID: 743435074}
+  - component: {fileID: 743435075}
   m_Layer: 6
   m_Name: NPC Oppossum
   m_TagString: Untagged
@@ -14548,6 +14580,102 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!82 &743435075
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743435069}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6c6fe2e8502a60d40980d8fa72e59574, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &747139373
 GameObject:
   m_ObjectHideFlags: 0
@@ -14620,6 +14748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 567243782}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -14672,6 +14801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1903523247}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -14837,6 +14967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 5067527}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -15024,6 +15155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1617049586}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -15107,6 +15239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1145106658}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -37882,6 +38015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 982250390}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -38282,6 +38416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2094704654}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -38386,6 +38521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 24826505}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -38589,6 +38725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 43479657}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -38841,6 +38978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 241370104}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -39139,6 +39277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 626799612}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -39284,6 +39423,7 @@ Transform:
   - {fileID: 1168940169}
   - {fileID: 172932113}
   - {fileID: 414325811}
+  - {fileID: 985111702}
   m_Father: {fileID: 1595939331}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39583,6 +39723,133 @@ Transform:
   m_Father: {fileID: 1492563056}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &985111700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985111702}
+  - component: {fileID: 985111701}
+  m_Layer: 0
+  m_Name: TubeSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &985111701
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985111700}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c394f4efd51b8da43976a3a131f7d6d0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &985111702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985111700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 972561794}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987019388
 GameObject:
   m_ObjectHideFlags: 0
@@ -39838,6 +40105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 323256485}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -40112,6 +40380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 90027333}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -40445,6 +40714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2033218053}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -41138,7 +41408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094930493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.5, y: -18.01, z: 28.206799}
+  m_LocalPosition: {x: -34.53, y: -18.04, z: 28.206799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1569479327}
@@ -41338,6 +41608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -58982,7 +59253,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16cd7fc89f6439340b3f6f1080969f75, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 0.75
   Loop: 0
   Mute: 0
@@ -59138,6 +59409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1867692560}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -59547,6 +59819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -59782,6 +60055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1928978954}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -60425,6 +60699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -60503,6 +60778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2109000041}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -60639,6 +60915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -78138,6 +78415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -78242,6 +78520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -78367,6 +78646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1587571804}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -78742,6 +79022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1657810663}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -100674,6 +100955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -101384,6 +101666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1341820598}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -101611,6 +101894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 22042453}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -101689,6 +101973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 997130007}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -101767,6 +102052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 687061555}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -101819,6 +102105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1540971899}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -102093,7 +102380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456601643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.71, y: -2.43, z: 19.252329}
+  m_LocalPosition: {x: -38.79, y: -2.59, z: 19.252329}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 634779672}
@@ -102314,6 +102601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1750244490}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -102424,6 +102712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1257078313}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -102538,6 +102827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -103934,6 +104224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2051135660}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -104171,6 +104462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1327467012}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -104764,6 +105056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1874682870}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -104816,6 +105109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 622363499}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -105961,6 +106255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 303821166}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -105999,6 +106294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -106480,6 +106776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2052179875}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -106584,6 +106881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 694214803}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -106763,7 +107061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652442625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.5, y: -18.01, z: 38.2068}
+  m_LocalPosition: {x: -34.53, y: -18.04, z: 38.2068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 43222147}
@@ -106864,6 +107162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1667662095}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -107390,6 +107689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1724715704}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -107657,6 +107957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2053081955}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -108030,6 +108331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1485724212}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -108536,7 +108838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756587683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.500729, y: 3.1617022, z: 19.252329}
+  m_LocalPosition: {x: -18.390997, y: 3.1617022, z: 19.252329}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2096319381}
@@ -108554,7 +108856,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 02f44712360902842b113088b87e5275, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.03
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -108710,6 +109012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 867841861}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -108939,6 +109242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 198268365}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109101,6 +109405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1414316961}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109205,6 +109510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 503343206}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109257,6 +109563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2093875521}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109659,6 +109966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1781333136}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109737,6 +110045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 490113048}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -109902,6 +110211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 622002266}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -110537,6 +110847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 31116330}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -111188,6 +111499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2047935396}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -111974,6 +112286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1078706210}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -112365,7 +112678,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026929863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3260584, y: -23.056976, z: 28.206799}
+  m_LocalPosition: {x: -14.216304, y: -23.09637, z: 28.206799}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children: []
   m_Father: {fileID: 1505653856}
@@ -112559,6 +112872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 325617283}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -112813,6 +113127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1088566190}
   player: {fileID: 676507936}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -112895,6 +113210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 1728318610}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -113046,6 +113362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 815813665}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []
@@ -113736,6 +114053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitTube: {fileID: 2111890961}
   player: {fileID: 1652442625}
+  tubeSound: {fileID: 985111701}
   disableInputs:
     m_PersistentCalls:
       m_Calls: []

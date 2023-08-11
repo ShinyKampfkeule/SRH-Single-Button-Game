@@ -49,6 +49,7 @@ public class OppossumEncounter : MonoBehaviour
                 inputsDisabled = true;
             }
             fleed = true;
+            GetComponent<AudioSource>().Play();
             GetComponent<SpriteRenderer>().flipX = true;
             Sequence sequence = DOTween.Sequence();
             sequence.Append(transform.DOMove(tubeStart.transform.position, 2).SetEase(Ease.Linear));
@@ -66,6 +67,13 @@ public class OppossumEncounter : MonoBehaviour
         sequence.Append(transform.DOJump(transform.position, 1, 1, 1));
         sequence.Join(transform.DOScale(new Vector3(1, 1, 0), .5f).SetEase(Ease.Linear));
         sequence.Append(transform.DOMove(transform.position - new Vector3(2, 0, 0), 1).SetEase(Ease.Linear));
+        sequence.onComplete += RunAway;
+    }
+
+    public void RunAway()
+    {
+        Sequence sequence = DOTween.Sequence();
+        GetComponent<AudioSource>().Play();
         sequence.Append(transform.DOMove(transform.position - new Vector3(50, 0, 0), 2.5f).SetEase(Ease.Linear));
         sequence.onComplete += ResetSettings;
     }
@@ -82,7 +90,6 @@ public class OppossumEncounter : MonoBehaviour
     {
         if (!fleed)
         {
-            Debug.Log("Started");
             if (!inputsDisabled)
             {
                 disableInputs.Invoke();
@@ -93,7 +100,6 @@ public class OppossumEncounter : MonoBehaviour
             Sequence sequence = DOTween.Sequence();
             animator.SetFloat("Speed", 5f);
             runningSounds.Play();
-            Debug.Log(runningSounds.volume);
             sequence.Append(player.transform.DOMove(player.transform.position + new Vector3(10, 0, 0), 5f).SetEase(Ease.Linear));
             sequence.onComplete += AppearingOppossum;
         }
@@ -114,6 +120,7 @@ public class OppossumEncounter : MonoBehaviour
 
     public void ReactingOppossumPart1()
     {
+        GetComponent<AudioSource>().Play();
         GetComponent<SpriteRenderer>().flipX = true;
         Sequence sequence = DOTween.Sequence();
         sequence.Append(transform.DOMove(transform.position, 1).SetEase(Ease.Linear));

@@ -10,6 +10,9 @@ public class TubeInteractionHandler : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
+    [SerializeField]
+    private AudioSource tubeSound;
+
     private bool inputsDisabled = false;
 
     public UnityEvent disableInputs;
@@ -31,6 +34,7 @@ public class TubeInteractionHandler : MonoBehaviour
             disableInputs.Invoke();
             inputsDisabled = true;
         }
+        tubeSound.Play();
         Sequence sequence = DOTween.Sequence();
         sequence.Append(player.transform.DOMove(transform.position, 0).SetEase(Ease.Linear));
         if (player.name.Contains("Top"))
@@ -50,6 +54,7 @@ public class TubeInteractionHandler : MonoBehaviour
 
     public void FlipReset()
     {
+        tubeSound.Play();
         Sequence sequence = DOTween.Sequence();
         if (player.name.Contains("Top"))
         {
