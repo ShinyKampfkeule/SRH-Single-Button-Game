@@ -1,29 +1,17 @@
-using System;
-using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class InputHandler : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject player = null;
-
-    private bool keyPressed = false;
-    private bool firstPress = false;
-    private bool playerIsMoving = false;
-    private bool enemyIsInFront = false;
-
-    private float delayPress = .25f;
-    private float passedTimeSincePress = 0;
-    private float timeOnPress = 0;
-
     public UnityEvent buttonHold;
     public UnityEvent buttonHoldReleased;
     public UnityEvent buttonPress;
     public UnityEvent buttonDoublePress;
 
-    public Inputs inputs = null;
+    public Inputs inputs;
+
+    public bool timerStart = false;
 
     private void Awake()
     {
@@ -36,11 +24,16 @@ public class InputHandler : MonoBehaviour
         inputs.Main.Hold.performed += OnHold;
         inputs.Main.Hold.canceled += OnHoldRelease;
         inputs.Main.DoubleTap.performed += OnDoubleTap;
-        inputs.Main.DoubleTap.canceled += OnDoubleTapCanceled;
+        inputs.Main.Tap.performed += OnTap;
+        inputs.Main.Exit.performed += OnExit;
     }
 
     private void OnHold(InputAction.CallbackContext context)
     {
+        if (!timerStart)
+        {
+            timerStart = true;
+        }
         buttonHold.Invoke();
     }
 
@@ -54,18 +47,23 @@ public class InputHandler : MonoBehaviour
         buttonDoublePress.Invoke();
     }
 
-    private void OnDoubleTapCanceled(InputAction.CallbackContext context)
+    private void OnTap(InputAction.CallbackContext context)
     {
         buttonPress.Invoke();
     }
 
-    public void changeMovement()
+    private void OnExit(InputAction.CallbackContext context)
     {
-        playerIsMoving = false;
+        Application.Quit();
     }
 
-    public void encounterEnemy()
+    public void disableInputs()
     {
-        enemyIsInFront = true;
+        inputs.Disable();
+    }
+
+    public void enableInputs()
+    {
+        inputs.Enable();
     }
 }

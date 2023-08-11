@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PathObstructionHandler : MonoBehaviour
 {
@@ -10,40 +11,40 @@ public class PathObstructionHandler : MonoBehaviour
     [SerializeField]
     private GameObject connectedObstruction;
 
+    [SerializeField] 
+    private GameObject connectedCollider;
+
     [SerializeField]
     private GameObject obstructionCollider;
 
     [SerializeField]
     private AudioSource vanishingSound;
 
-    private bool playerIsHere = false;
+    public bool playerIsHere = false;
 
-    public void PlayerEntered()
+    public UnityEvent Ending;
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
-        if (collider != null && collider.name == transform.name)
-        {
-            playerIsHere = true;
-        }
+        playerIsHere = true;
     }
 
-    public void PlayerLeft()
+    public void OnTriggerExit2D(Collider2D collision)
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
-        if (playerIsHere && collider != null && collider.name != transform.name)
-        {
-            playerIsHere = false;
-        }
+        playerIsHere = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (playerIsHere && connectedObstruction.GetComponent<PathObstructionHandler>().playerIsHere)
         {
             vanishingSound.Play();
             GetComponent<SpriteRenderer>().enabled = false;
+            connectedObstruction.GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
+            connectedObstruction.GetComponent<BoxCollider2D>().enabled = false;
             obstructionCollider.GetComponent<BoxCollider2D>().enabled = false;
+            connectedCollider.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }

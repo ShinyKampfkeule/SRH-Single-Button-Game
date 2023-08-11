@@ -18,11 +18,11 @@ public class CommunicationHandler : MonoBehaviour
 
     public void StartCommunication()
     {
-        if (player.GetComponent<TriggerHandler>().collided.name == transform.name)
-        {
-            isCommunicating = true;
-            SaySomething();
-        }
+        //if (player.GetComponent<TriggerHandler>().collided.name == transform.name)
+        //{
+        //    isCommunicating = true;
+        //    SaySomething();
+        //}
     }
 
     public void SaySomething()

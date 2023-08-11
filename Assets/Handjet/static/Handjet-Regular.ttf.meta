@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 27f849840e3fbef469b34390252f34c6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Handjet
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c23344b586d7af2449a94e1d71107f8b, type: 3}
+  - {fileID: 12800000, guid: 6220dac7b0268184aaaabe6d77b00463, type: 3}
+  - {fileID: 12800000, guid: b3de3c2fec61c2f4d986c406aea4d19d, type: 3}
+  - {fileID: 12800000, guid: c1f24c706f2fe40428d183f1d30c811d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,7 +19,7 @@ public class DynamiteHandler : MonoBehaviour
 
     public void CollectDynamite()
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        Collider2D collider = player.GetComponent<TriggerHandler>().collidedDynamite;
         if (!isCollected && collider != null && collider.name == transform.name)
         {
             GetComponent<SpriteRenderer>().sprite = null;

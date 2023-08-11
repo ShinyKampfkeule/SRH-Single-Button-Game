@@ -15,7 +15,7 @@ public class LadderCollectionHandler : MonoBehaviour
 
     public void CollectLadder()
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        Collider2D collider = player.GetComponent<TriggerHandler>().collidedCollectibleLadder;
         if (collider != null && collider.name == transform.name)
         {
             collectionSound.Play();

@@ -6,9 +6,6 @@ using UnityEngine.Events;
 public class PlayerMovementHandler : MonoBehaviour
 {
     [SerializeField]
-    private float movementTime = 0.2f;
-
-    [SerializeField]
     private float speed;
 
     [SerializeField]
@@ -17,13 +14,13 @@ public class PlayerMovementHandler : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
-    public AudioSource runningSounds;
+    [SerializeField]
+    private AudioSource runningSounds;
 
     private Rigidbody2D rb;
 
-    public bool isMoving = false;
-
-    public UnityEvent stopMoving;
+    private bool isMoving = false;
+    public bool inCutscene = false;
 
     private void Start()
     {
@@ -42,7 +39,7 @@ public class PlayerMovementHandler : MonoBehaviour
 
     public void Update()
     {
-        if (isMoving)
+        if (isMoving && !inCutscene)
         {
             if (!runningSounds.isPlaying)
             {
@@ -54,7 +51,7 @@ public class PlayerMovementHandler : MonoBehaviour
             }
             rb.velocity = new Vector2(speed, rb.velocity.y);
         }
-        else
+        else if (!inCutscene)
         {
             if (animator.GetFloat("Speed") != 0)
             {

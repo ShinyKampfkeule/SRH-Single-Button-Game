@@ -20,7 +20,7 @@ public class RockScript : MonoBehaviour
 
     public void PlayerInteraction()
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        Collider2D collider = player.GetComponent<TriggerHandler>().collidedStone;
         if (collider != null && collider.name == transform.name)
         {
             if (isTopRock)

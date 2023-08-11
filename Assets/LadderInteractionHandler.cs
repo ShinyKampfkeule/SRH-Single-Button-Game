@@ -10,7 +10,7 @@ public class LadderInteractionHandler : MonoBehaviour
 
     public void PlayerInteraction()
     {
-        Collider2D collider = player.GetComponent<TriggerHandler>().collided;
+        Collider2D collider = player.GetComponent<TriggerHandler>().collidedLadder;
         if (collider != null && collider.name == transform.name)
         {
             player.transform.position = NewPlayerPosition.transform.position;
